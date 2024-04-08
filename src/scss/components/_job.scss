@@ -50,11 +50,12 @@
 	&__company-detail {
 		display: flex;
 		align-items: center;
+		flex-wrap: wrap;
+		gap: 3rem;
 	}
 	&__status {
 		display: flex;
 		gap: 1rem;
-		margin-left: 4rem;
 	}
 
 	&__details {
@@ -69,6 +70,12 @@
 		display: flex;
 		flex-wrap: wrap;
 		gap: 2rem;
+	}
+
+	@include respond-to('tiny') {
+		&__company-detail {
+			gap: 1rem;
+		}
 	}
 
 	@include respond-to('large') {
