@@ -1,0 +1,15 @@
+.button {
+	width: min-content;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	color: color(neutral, dark-cyan);
+	font-weight: weight(bold);
+	transition: all 0.3s ease-in;
+
+	&:hover {
+		text-decoration: underline;
+		color: color(primary, base);
+	}
+}

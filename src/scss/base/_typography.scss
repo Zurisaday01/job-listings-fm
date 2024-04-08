@@ -1,0 +1,27 @@
+body {
+	color: color(neutral, dark-cyan);
+	font-family: $font-family;
+	font-size: font-size(body); // 10px default base
+}
+
+.heading {
+	color: color(primary, base);
+
+	&--primary {
+		font-size: font-size(heading-xl);
+	}
+
+	&--secondary {
+		font-size: font-size(heading-lg);
+		
+	}
+
+	&--third {
+		font-size: font-size(heading-lg);
+		
+	}
+}
+
+.paragraph {
+	line-height: 1.7;
+}

@@ -1,0 +1,128 @@
+.job {
+	background-color: color(neutral, light);
+	box-shadow: $box-shadow;
+	position: relative;
+
+	&__image-container {
+		width: 6rem;
+		height: 6rem;
+		position: absolute;
+		top: 0;
+		left: 3rem; // the same as the padding of the wrapper
+		transform: translateY(-50%);
+	}
+
+	&__image {
+		object-fit: cover;
+		height: 100%;
+		width: 100%;
+	}
+
+	&__wrapper {
+		overflow: hidden;
+		position: relative;
+		padding: 3.2rem 3rem;
+		border-radius: 1rem;
+		display: flex;
+		flex-direction: column;
+
+		&--highlighted {
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 5px;
+				background-color: color(primary, base);
+			}
+		}
+	}
+
+	&__header {
+		display: flex;
+		gap: 1rem;
+		flex-direction: column;
+		border-bottom: 1px solid color(neutral, very-dark-cyan);
+		padding-top: 1rem;
+	}
+
+	&__company-detail {
+		display: flex;
+		align-items: center;
+	}
+	&__status {
+		display: flex;
+		gap: 1rem;
+		margin-left: 4rem;
+	}
+
+	&__details {
+		display: flex;
+		padding-bottom: 2rem;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	&__body {
+		padding-top: 2rem;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 2rem;
+	}
+
+	@include respond-to('large') {
+		&__wrapper {
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		&__header {
+			border-bottom: 1px solid transparent;
+		}
+	}
+
+	@include respond-to('huge') {
+		&__header-wrapper {
+			display: flex;
+			align-items: center;
+			gap: 3rem;
+		}
+		&__image-container {
+			width: 8rem;
+			height: 8rem;
+			position: relative;
+			top: 0;
+			left: 0;
+			transform: translateY(0%);
+		}
+
+		&__header-desktop {
+			display: flex;
+			gap: 1rem;
+			flex-direction: column;
+		}
+
+		&__image {
+			object-fit: cover;
+			height: 100%;
+			width: 100%;
+		}
+	}
+}
+
+.job-list {
+	display: flex;
+	flex-direction: column;
+	gap: 5rem;
+	margin-top: 3rem;
+}
+
+.dot {
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	background-color: color(neutral, dark-cyan);
+	margin: 0 5px; /* Adjust the space between dots */
+}

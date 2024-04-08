@@ -1,0 +1,50 @@
+// colors
+
+$color: (
+	primary: (
+		base: #5ba4a4,
+	),
+	neutral: (
+		light-cyan-bg: #effafa,
+		light-cyan-filter: #eef6f6,
+		light: #ffff,
+		dark-cyan: #7b8e8e,
+		very-dark-cyan: #2c3a3a,
+	),
+);
+
+// fonts family
+$font-family: 'League Spartan', sans-serif;
+
+// - Weights: 500, 700
+$weight: (
+	regular: 500,
+	bold: 700,
+);
+
+$font-size: (
+	heading-xl: 2rem,
+	heading-lg: 2rem,
+	body: 1.5rem,
+);
+
+$max-width: 1180px !default;
+
+$breakpoints: (
+	'medium': (
+		min-width: 23.4375rem,
+		// 375px
+	),
+	'large': (
+		min-width: 55rem,
+		// 800px
+	),
+	'huge': (
+		min-width: 71.25rem,
+		//1140px
+	),
+) !default;
+
+$base-url: '/assets/' !default;
+
+$box-shadow: 0px 11px 21px -3px rgba(91, 164, 164, 0.2);

@@ -1,0 +1,15 @@
+.header {
+	width: 100%;
+	background-color: color(primary, base);
+	height: 20rem;
+	&__image {
+		object-fit: cover;
+		object-position: center;
+		width: 100%;
+		height: 100%;
+	}
+
+	@include respond-to('large') {
+        height: 15rem;
+	}
+}

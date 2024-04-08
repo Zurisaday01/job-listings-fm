@@ -1,0 +1,23 @@
+.filter {
+	transform: translateY(-50%);
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+	gap: 5px;
+	background-color: color(neutral, light);
+	padding: 2rem;
+	border-radius: 1rem;
+	box-shadow: $box-shadow;
+
+	&__tags {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1.5rem;
+	}
+}
+
+.filter-container {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}

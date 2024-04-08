@@ -1,0 +1,36 @@
+.options {
+	background-color: color(neutral, light);
+	border-radius: 1rem;
+	box-shadow: $box-shadow;
+	margin-top: -2rem;
+	padding: 0;
+	overflow: hidden;
+	text-align: center;
+	display: block;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	transition: visibility 0.3s;
+	z-index: 999;
+
+	&__option {
+		list-style: none;
+		padding: 2rem;
+		transition: all 0.3s;
+		cursor: pointer;
+
+		&:hover {
+			color: color(neutral, light-cyan-bg);
+			background-color: color(primary, base);
+		}
+	}
+}
+
+.options.hide {
+	visibility: hidden;
+}
+
+.options.hide .options__option {
+	visibility: hidden;
+}

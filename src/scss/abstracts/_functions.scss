@@ -1,0 +1,28 @@
+@function asset($base, $type, $path) {
+	@return url($base + $type + $path);
+}
+
+@function image($path, $base: $base-url) {
+	@return asset($base, 'images/', $path);
+}
+
+// e.g. color(primary, base)
+// e.g. color(neutral, light-cyan-bg)
+@function color($elem, $variant) {
+	@return map-get(map-get($color, $elem), $variant);
+}
+
+// e.g. font-size(heading)
+@function font-size($elem) {
+	@return map-get($font-size, $elem);
+}
+
+// e.g. weight(heading)
+@function weight($elem) {
+	@return map-get($weight, $elem);
+}
+
+// e.g. breakpoint($small)
+@function breakpoint($elem) {
+	@return map-get($breakpoint, $elem);
+}

@@ -1,0 +1,14 @@
+.tag {
+	background-color: color(neutral, light-cyan-bg);
+	color: color(primary, base);
+	font-weight: weight(bold);
+	padding: 1rem;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.3s;
+
+	&:hover {
+		color: color(neutral, light-cyan-bg);
+		background-color: color(primary, base);
+	}
+}
